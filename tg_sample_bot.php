@@ -401,39 +401,15 @@ function person_time($time, $person_id) {
 }  
 
  
-    
+/**
+ * Возвращает строку без HTML тегов.
+ *
+ * @param string $text
+ * @return string
+ */    
 function clear_tags($text) {
-	$clear = str_replace("<p>", "", $text);
-	$clear = str_replace("</p>", " 
-	", $clear);
-	$clear = str_replace("<br/>", " 
-	", $clear);
-	$clear = str_replace("<br />", " 
-	", $clear);
-	$clear = str_replace("<br>", " 
-	", $clear);
-	$clear = str_replace("<ol>", " 
-	", $clear);
-	$clear = str_replace("</ol>", " 
-	", $clear);
-	$clear = str_replace("<ul>", " ", $clear);
-	$clear = str_replace("</ul>", " ", $clear);
-	$clear = str_replace("<li>", "— ", $clear);
-	$clear = str_replace("</li>", " ", $clear);
-	$clear = str_replace("<h1>", " ", $clear);
-	$clear = str_replace("</h1>", " ", $clear);
-	$clear = str_replace("<h2>", " ", $clear);
-	$clear = str_replace("</h2>", " ", $clear);
-	$clear = str_replace("<h3>", " ", $clear);
-	$clear = str_replace("</h3>", " ", $clear);
-	$clear = str_replace("<h4>", " ", $clear);
-	$clear = str_replace("</h4>", " ", $clear);
-	$clear = str_replace("<h5>", " ", $clear);
-	$clear = str_replace("</h5>", " ", $clear);	
-	$clear = str_replace("<h6>", " ", $clear);
-	$clear = str_replace("</h6>", " ", $clear);	
-	$clear = str_replace("&nbsp;", "", $clear);		
+	$text = strip_tags($text);	
 
-	return $clear;
+	return $text;
 }    
    
