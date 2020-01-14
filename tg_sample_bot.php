@@ -1,13 +1,11 @@
 <?php
 /*
 Plugin Name: Telegram Sample Bot
-Plugin URI: 
-Description: 
-Version: 
+Plugin URI: https://github.com/solidcreature/sample_tg_bot/
+Description: Минималистичный телеграм-бот. Основа для создания новых ботов
+Version: 0.2
 Author: Nikolay Mironov
 Author URI: http://wpfolio.ru
-License: 
-License URI: 
 */
 
 /////
